@@ -1,0 +1,363 @@
+.contacts{
+    border: 1px solid rgba(255,255,255,0.07);
+    width: 65%;
+    margin: 0 auto;
+    background: none;
+    @extend .flex;
+    flex-wrap: wrap;
+    position: relative;
+    &__hover{
+        transition: all ease .5s;
+        &:hover{
+            background-color: $font-color-first;
+            z-index: 1000;
+        }
+    }
+    &__container{
+        padding-top: 0 !important;
+    }
+    &__container--name{
+        font-size: $size-14x;
+        font-weight: $weight-7;
+        color: white;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__head{
+        position: fixed;
+        top: $space-10x;
+        left: 50%;
+        width: inherit;
+        transform: translate(-50%);
+        z-index: 10;
+    }
+    &__sosial{
+        position: fixed;
+        right: -$space-13x;
+        bottom: $size-15x*2;
+    }
+    &__footer{
+        position: fixed;
+        bottom: $size-8x;
+        height: $size-16x;
+    }
+    &__box{
+        border: 1px solid rgba(255,255,255,0.07);
+        background: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all ease 2s;
+    }
+    &__nav{
+        position: absolute;
+        top: $space-14x*9;
+        left: $space-6x;
+    }
+    &__back{
+        color: white;
+        font-size: $size-3x;
+    }
+    &__active{
+        color: $thirdary-color;
+        font-size: $size-3x;
+    }
+    &__navbar{
+        border: 1px solid rgba(255,255,255,0.07);
+        margin: $space-20x*9 0 $space-15x 0;
+        padding: $space-9x $space-9x;
+        box-sizing: border-box;
+        background-color: $secondary-color;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        &--items{
+            height: 20px;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &--link{
+            color: white;
+            font-size: $size-3x+1;
+        }
+    }
+    &__link--active{
+        color: $font-color-first;
+    }
+    &__latest--post{
+        font-size: 24px;
+        color: white;
+        margin-left: $space-7x;
+    }
+    &__parent{
+        margin-top: 100vh;
+        padding: $space-15x*2 0;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        height: 1400px;
+        &--phone{
+            border: 1px solid rgba(255,255,255,0.07);
+            position: absolute;
+            padding: $space-7x;
+            box-sizing: border-box;
+            width:  45%;
+            left: 0;
+            top: $space-14x*3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            background-color: $secondary-color; 
+        }
+        &--email{
+            border: 1px solid rgba(255,255,255,0.07);
+            position: absolute;
+            padding: $space-7x;
+            box-sizing: border-box;
+            width:  45%;
+            right: 0;
+            top: $space-14x*3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $secondary-color; 
+        }
+        &--address{
+            border: 1px solid rgba(255,255,255,0.07);
+            position: absolute; 
+            padding: $space-7x;
+            box-sizing: border-box;
+            width:  45%;
+            left: 0;
+            top: $space-20x*5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            background-color: $secondary-color; 
+
+        }
+        &--work{
+            border: 1px solid rgba(255,255,255,0.07);
+            position: absolute;
+            padding: $space-7x;
+            box-sizing: border-box;
+            width:  45%;
+            right: 0;
+            top: $space-20x*5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            background-color: $secondary-color; 
+        }
+        &--link{
+            font-size: 16px;
+            color: white;
+        }
+        &--icon{
+            margin-bottom: $space-5x;
+            font-size: $space-7x;
+            color: $font-color-first;
+            transform: rotateY(180deg);
+        }
+        &--name{
+            font-size: 16px;
+            color: white;
+            margin-bottom: $space-5x;
+        }
+        &--desc{
+            font-size: 16px;
+            
+        }
+        &--title{
+            color: white;
+            margin: 0 0 $space-4x $space-6x;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &--desc{
+            color: $thirdary-color;
+            font-size: 16px;
+        }
+        &--sdtitle{
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            position: absolute;
+            bottom: 520px;
+            left: $space-6x;
+        }
+        &--input{
+            width: 100%;
+            font-size: 16px;
+            color: white;
+            background: none;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            margin-bottom: $space-5x;
+            padding: $space-3x 0;
+            box-sizing: border-box;
+        }
+        &--submit{
+            padding: $space-2x $space-5x;
+            font-size: 16px;
+            color: $font-color-first;
+            background: none;
+            border: 2px solid $font-color-first; 
+        }
+        &--message{
+            height: 110px;
+            width: 100%;
+            background: none;
+            color: white;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            resize: none;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: $space-5x;
+            padding: $space-3x 0;
+
+
+        }
+        &--form{
+            border: 1px solid rgba(255,255,255,0.07);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: $space-15x;
+            background-color: $secondary-color;
+            padding: $space-7x;
+            box-sizing: border-box;
+        }
+    }
+}
+
+
+
+@media (max-width: 1198px){
+    .contacts{
+       width: 100%;
+       border: none;
+       padding-bottom: 75px;
+
+    }
+    .contacts__parent{
+        height: 1500px;
+    }
+    .contacts__parent--form{
+        bottom: 175px;
+    }
+    .contacts__parent--sdtitle{
+        bottom: 620px;
+    }
+    
+@media (max-width: 720px){
+    .contacts{
+        padding-bottom: 0;
+    }
+    .contacts__parent--sdtitle{
+        margin: 100px 0 0 30px;
+    }
+    .contacts__parent{
+        height:auto;
+        display: block;
+        padding: 150px 0 0;
+    }
+    .contacts__parent *{
+        position: static;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contacts__parent * *{
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .contacts__parent--input{
+        width: 100% !important;
+        font-size: 16px;
+        color: white;
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        margin-bottom: $space-5x;
+        padding: $space-3x 0;
+        box-sizing: border-box;
+    }
+    .contacts__parent--submit{
+        padding: $space-2x $space-5x;
+        font-size: 16px;
+        color: $font-color-first;
+        background: none;
+        border: 2px solid $font-color-first;
+        
+        
+    }
+    .contacts__parent--message{
+        height: 110px;
+        width: 100%;
+        background: none;
+        color: white;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        resize: none;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin-bottom: $space-5x;
+        padding: $space-3x 0;
+
+    }
+    .portfolio__contact--mobile *{
+        width: auto;
+    }
+    .portfolio__contact--mobile{
+        margin-top: 60px;
+    }
+    .contacts__box{
+        width: 0;
+        border-left: none;
+    }
+    .blog__search--form{
+        width: 100%;
+    }
+    .blog{
+        border: none;
+    }
+    .blog__box{
+        width: 0;
+        border-left: none;
+    }
+    .blog__parent{
+        display: block;
+        padding: 150px 0 0;
+    }
+    .blog__parent--left{
+        width: 100%;
+        height: auto;
+    }
+    .blog__parent--right{
+        width: 100%;
+        height: auto;
+    }
+    .blog__parent--img{
+        width: 100%;
+        height: 230px;
+    }
+}
+  
+    
+
+
+}
+
