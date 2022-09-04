@@ -84,7 +84,7 @@
         @extend .justify-content-between;
         @extend .align-items-center;
         transition: all ease .5s;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid white !important;
     }
     &__reset{
         color: $main-color;

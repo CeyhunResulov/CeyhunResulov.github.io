@@ -1420,7 +1420,7 @@ table {
 .home__head {
   height: 40px;
   transition: all ease 0.5s;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid white !important;
 }
 .home__reset {
   color: rgb(187, 187, 187);
