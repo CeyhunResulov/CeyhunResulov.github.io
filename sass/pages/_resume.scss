@@ -541,7 +541,7 @@ body{
     }
     &__pricing--overline{
         text-decoration: line-through;
-        color: $fourth-color+$fourth-color;
+        // color: $fourth-color+$fourth-color;
     }
     // experience and education
     &__edu--width{
@@ -598,7 +598,7 @@ body{
     &__design--title{
         color: white;
         font: $size-4x;
-        margin-bottom: $space-3x;
+        margin-top: $space-3x;
     }
     &__design--skills{
         width: 100%;
